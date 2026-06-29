@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.8']
+        python-version: ['3.10']
 
     steps:
     - uses: actions/checkout@v3
@@ -56,7 +56,7 @@ jobs:
         pip install flake8 black isort mypy
     
     - name: Check code formatting with black
-      run: black --check src/ tests/
+      run: black --check --target-version py310 src/ tests/
     
     - name: Sort imports with isort
       run: isort --check-only src/ tests/
