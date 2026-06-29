@@ -28,6 +28,8 @@ jobs:
         pip install pytest pytest-cov pytest-mock
     
     - name: Run tests
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: pytest tests/ -v --cov=src --cov-report=xml
     
     - name: Upload coverage
