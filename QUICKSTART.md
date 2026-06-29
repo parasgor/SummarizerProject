@@ -4,8 +4,8 @@
 
 ### 1. Clone and Setup
 ```bash
-git clone https://github.com/yourusername/summarizer-agent.git
-cd summarizer-agent
+git clone https://github.com/parasgor/SummarizerProject.git
+cd SummarizerProject
 chmod +x setup.sh
 ./setup.sh
 ```
@@ -264,8 +264,8 @@ VERBOSE_LOGGING=false
 
 ## Support & Resources
 
-- **Issues**: https://github.com/yourusername/summarizer-agent/issues
-- **Discussions**: https://github.com/yourusername/summarizer-agent/discussions
+- **Issues**: https://github.com/parasgor/SummarizerProject/issues
+- **Discussions**: https://github.com/parasgor/SummarizerProject/discussions
 - **Documentation**: See README.md
 - **Contributing**: See CONTRIBUTING.md
 

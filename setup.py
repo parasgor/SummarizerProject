@@ -18,7 +18,7 @@ setup(
     description="Production-grade AI Summarizer Agent with comprehensive evaluation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/summarizer-agent",
+    url="https://github.com/parasgor/SummarizerProject",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -56,8 +56,8 @@ setup(
     include_package_data=True,
     keywords="ai summarization evaluation deepeval openai llm",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/summarizer-agent/issues",
-        "Documentation": "https://github.com/yourusername/summarizer-agent#readme",
-        "Source": "https://github.com/yourusername/summarizer-agent",
+        "Bug Reports": "https://github.com/parasgor/SummarizerProject/issues",
+        "Documentation": "https://github.com/parasgor/SummarizerProject#readme",
+        "Source": "https://github.com/parasgor/SummarizerProject",
     },
 )

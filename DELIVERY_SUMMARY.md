@@ -381,7 +381,7 @@ git commit -m "Initial commit: Production-ready summarizer agent"
 
 ### 2. Push to GitHub
 ```bash
-git remote add origin https://github.com/yourusername/summarizer-agent.git
+git remote add origin https://github.com/parasgor/SummarizerProject.git
 git branch -M main
 git push -u origin main
 ```

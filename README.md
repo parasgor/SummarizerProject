@@ -56,8 +56,8 @@ summarizer_project/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/summarizer-agent.git
-cd summarizer-agent
+git clone https://github.com/parasgor/SummarizerProject.git
+cd SummarizerProject
 ```
 
 2. **Create virtual environment**

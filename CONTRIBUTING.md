@@ -43,8 +43,8 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 1. Fork the repository
 2. Clone your fork:
    ```bash
-   git clone https://github.com/yourusername/summarizer-agent.git
-   cd summarizer-agent
+   git clone https://github.com/parasgor/SummarizerProject.git
+   cd SummarizerProject
    ```
 
 3. Create a virtual environment:

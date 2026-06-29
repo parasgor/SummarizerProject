@@ -33,10 +33,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/summarizer-agent"
-Documentation = "https://github.com/yourusername/summarizer-agent#readme"
-Repository = "https://github.com/yourusername/summarizer-agent.git"
-Issues = "https://github.com/yourusername/summarizer-agent/issues"
+Homepage = "https://github.com/parasgor/SummarizerProject"
+Documentation = "https://github.com/parasgor/SummarizerProject#readme"
+Repository = "https://github.com/parasgor/SummarizerProject.git"
+Issues = "https://github.com/parasgor/SummarizerProject/issues"
 
 [project.optional-dependencies]
 dev = [

@@ -88,7 +88,7 @@ git commit -m "🎉 Initial commit: Production-ready summarizer agent
 
 #### 3.5 Add Remote Repository
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/summarizer-agent.git
+git remote add origin https://github.com/parasgor/SummarizerProject.git
 ```
 
 #### 3.6 Rename Branch to Main (if needed)
@@ -131,7 +131,7 @@ git push origin v1.0.0
 
 #### 4.3 Create GitHub Release
 
-1. Go to your repository: `https://github.com/YOUR_USERNAME/summarizer-agent`
+1. Go to your repository: `https://github.com/parasgor/SummarizerProject`
 2. Click "Releases" → "Create a new release"
 3. Select tag `v1.0.0`
 4. Add release notes (copy from CHANGELOG.md)
@@ -269,7 +269,7 @@ git config user.email "your@email.com"
 git add .
 git commit -m "🎉 Initial commit: Production-ready summarizer agent"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/summarizer-agent.git
+git remote add origin https://github.com/parasgor/SummarizerProject.git
 git push -u origin main
 
 # Create release
@@ -527,18 +527,18 @@ After publishing, share these links:
 
 ```
 📚 Documentation
-   README: https://github.com/YOUR_USERNAME/summarizer-agent
-   Docs: https://github.com/YOUR_USERNAME/summarizer-agent#readme
-   API: https://github.com/YOUR_USERNAME/summarizer-agent#api-reference
+   README: https://github.com/parasgor/SummarizerProject
+   Docs: https://github.com/parasgor/SummarizerProject#readme
+   API: https://github.com/parasgor/SummarizerProject#api-reference
 
 💻 Installation
    PyPI: https://pypi.org/project/summarizer-agent/
    Install: pip install summarizer-agent
 
 🤝 Contribute
-   Issues: https://github.com/YOUR_USERNAME/summarizer-agent/issues
-   PRs: https://github.com/YOUR_USERNAME/summarizer-agent/pulls
-   Guide: https://github.com/YOUR_USERNAME/summarizer-agent/blob/main/CONTRIBUTING.md
+   Issues: https://github.com/parasgor/SummarizerProject/issues
+   PRs: https://github.com/parasgor/SummarizerProject/pulls
+   Guide: https://github.com/parasgor/SummarizerProject/blob/main/CONTRIBUTING.md
 
 💬 Discuss
    Discussions: https://github.com/YOUR_USERNAME/summarizer-agent/discussions
