@@ -279,7 +279,6 @@ def evaluate_summaries(
             input=item.get("text", ""),
             actual_output=item.get("generated_summary", ""),
             expected_output=item.get("expected_summary", ""),
-            prompt=item.get("prompt", prompt or ""),
             retrieval_context=[item.get("text", "")],
         )
         test_cases.append(test_case)
@@ -297,6 +296,6 @@ def evaluate_summaries(
         metrics_config={
             "num_metrics": len(metrics),
             "num_test_cases": len(test_cases),
-            "metrics": [m.name for m in metrics],
+            "metrics": [getattr(m, 'name', m.__class__.__name__) for m in metrics],
         }
     )

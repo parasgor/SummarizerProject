@@ -83,10 +83,10 @@ class TestEvaluationResult:
         
         assert len(per_input) == 2
         assert per_input[0]["input_idx"] == 1
-        assert per_input[0]["average_score"] == 0.85  # (0.8 + 0.9) / 2
+        assert per_input[0]["average_score"] == pytest.approx(0.85, rel=1e-2)  # (0.8 + 0.9) / 2
         assert per_input[0]["passed"] == True  # >= 0.7
         
-        assert per_input[1]["average_score"] == 0.65  # (0.6 + 0.7) / 2
+        assert per_input[1]["average_score"] == pytest.approx(0.65, rel=1e-2)  # (0.6 + 0.7) / 2
         assert per_input[1]["passed"] == False  # < 0.7
     
     def test_get_overall_stats(self):

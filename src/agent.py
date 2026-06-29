@@ -124,9 +124,13 @@ class SummarizerAgent:
             List of summaries in the same order as input texts
         
         Raises:
-            ValueError: If any text is invalid
+            ValueError: If any text is invalid or list is empty
         """
         logger.info(f"Starting batch summarization of {len(texts)} texts")
+        
+        # Validate list is not empty
+        if not texts:
+            raise ValueError("Cannot summarize empty list of texts")
         
         # Validate all texts
         invalid_texts = [

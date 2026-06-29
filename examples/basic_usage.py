@@ -2,6 +2,12 @@
 Basic usage example for the Summarizer Agent.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to path to import src module
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from src.agent import SummarizerAgent
 
 def main():

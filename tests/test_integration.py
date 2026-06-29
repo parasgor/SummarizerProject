@@ -4,7 +4,7 @@ Integration tests for the Summarizer project.
 
 import pytest
 import os
-from unittest.mock import patch, Mock
+from unittest.mock import patch, Mock, MagicMock
 from src.agent import SummarizerAgent
 from src.evaluation import evaluate_summaries
 from src.utils import validate_text, load_json_data, save_json_data
@@ -18,11 +18,11 @@ class TestIntegrationSummarizeAndEvaluate:
     def test_complete_workflow(self, mock_evaluate, mock_openai):
         """Test complete workflow from summarization to evaluation."""
         # Setup mocks
-        mock_client = Mock()
+        mock_client = MagicMock()
         mock_openai.return_value = mock_client
         
         # Mock summarization response
-        mock_response = Mock()
+        mock_response = MagicMock()
         mock_response.choices[0].message.content = "AI is transforming industries."
         mock_client.chat.completions.create.return_value = mock_response
         
@@ -54,13 +54,13 @@ class TestIntegrationSummarizeAndEvaluate:
     @patch('src.agent.OpenAI')
     def test_batch_summarization_workflow(self, mock_openai):
         """Test batch summarization workflow."""
-        mock_client = Mock()
+        mock_client = MagicMock()
         mock_openai.return_value = mock_client
         
         summaries = ["Summary 1.", "Summary 2.", "Summary 3."]
         mock_responses = []
         for summary in summaries:
-            mock_response = Mock()
+            mock_response = MagicMock()
             mock_response.choices[0].message.content = summary
             mock_responses.append(mock_response)
         

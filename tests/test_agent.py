@@ -45,7 +45,7 @@ class TestSummarize:
         mock_client = MagicMock()
         mock_openai.return_value = mock_client
         
-        mock_response = Mock()
+        mock_response = MagicMock()
         mock_response.choices[0].message.content = "This is a summary."
         mock_client.chat.completions.create.return_value = mock_response
         
@@ -61,7 +61,7 @@ class TestSummarize:
         mock_client = MagicMock()
         mock_openai.return_value = mock_client
         
-        mock_response = Mock()
+        mock_response = MagicMock()
         mock_response.choices[0].message.content = "Summary with custom prompt."
         mock_client.chat.completions.create.return_value = mock_response
         
@@ -101,7 +101,7 @@ class TestSummarizeBatch:
         summaries = ["Summary 1.", "Summary 2.", "Summary 3."]
         mock_response_list = []
         for summary in summaries:
-            mock_response = Mock()
+            mock_response = MagicMock()
             mock_response.choices[0].message.content = summary
             mock_response_list.append(mock_response)
         

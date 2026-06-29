@@ -2,6 +2,12 @@
 Advanced usage example with custom configuration and evaluation.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to path to import src module
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from src.agent import SummarizerAgent
 from src.evaluation import evaluate_summaries
 from src.metrics import (
@@ -114,8 +120,8 @@ def main():
     ]
     
     print(f"✓ Configured {len(custom_metrics)} evaluation metrics")
-    for metric in custom_metrics:
-        print(f"   - {metric.name} (threshold: {metric.threshold})")
+    # for metric in custom_metrics:
+    #     print(f"   - {metric.name} (threshold: {metric.threshold})")
     
     # ========================================================================
     # Step 5: Evaluate summaries

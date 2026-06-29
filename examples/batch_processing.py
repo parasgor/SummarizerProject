@@ -2,7 +2,13 @@
 Batch processing example for summarizing multiple texts.
 """
 
+import sys
+from pathlib import Path
 import json
+
+# Add parent directory to path to import src module
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from src.agent import SummarizerAgent
 from src.utils import save_json_data, get_readable_timestamp
 
@@ -116,7 +122,9 @@ def main():
     print(f"Overall reduction: {(1 - avg_compression):.2%}")
     
     # Save results to JSON
-    output_file = f"batch_results_{get_readable_timestamp().replace(' ', '_').replace(':', '-')}.json"
+    output_dir = Path(__file__).parent.parent / "results"
+    output_dir.mkdir(exist_ok=True)
+    output_file = str(output_dir / f"batch_results_{get_readable_timestamp().replace(' ', '_').replace(':', '-')}.json")
     save_json_data(
         {
             "timestamp": get_readable_timestamp(),
